@@ -1,0 +1,12 @@
+
+# To deploy nginx image to the cluser
+kubectl create deployment ngix-depl --image=nginx
+
+# To see the replicaset
+kubeclt get replicaset
+
+# To see the pod
+kubectl get pod
+
+# To edit pod or contanier
+kubectl edit deployment <podname>
