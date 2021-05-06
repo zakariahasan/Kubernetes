@@ -10,3 +10,15 @@ kubectl get pod
 
 # To edit pod or contanier
 kubectl edit deployment <podname>
+
+kubectl logs <podname>
+
+kubectl 
+
+kubectl delete deployment <podname>
+
+# To access the interactive terminal for contanier
+kubectl exec -it <pod name> -- bin/bash
+
+kubectl apply -f nginx-dep.ymal
+
