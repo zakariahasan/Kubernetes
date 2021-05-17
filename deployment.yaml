@@ -4,7 +4,7 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx-deployment
-spec:
+spec:                 # specfication for deploymnet
   replical: 1
   selector:
     matchLabels:
@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: nginx
-    spec:
+    spec:         # specfication for Pod
       containers:
       - name: nginx
         image: nginx:1.16
