@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadeta:
+   name: nginx-service
+spec:
+  selctor:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
